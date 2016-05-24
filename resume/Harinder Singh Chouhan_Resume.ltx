@@ -1,7 +1,10 @@
 \documentclass{article}
 \usepackage{graphicx}
 \graphicspath{{./images/}}
-
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 
 \begin{document}
 \center {\textbf{\textrm{\huge{Harinder Singh Chouhan}}}}
@@ -21,4 +24,21 @@
 \textrm{The main objective of joining this Internship is to develop technical skills so that I could understand the concepts of
 programming and embedded sytems better which would help me in my future professional career}
 \end{flushleft}
+
+
+\begin{flushleft}
+\textrm{\textbf{EDUCATIONAL QUALIFICTION}}
+\begin{center}
+\begin{tabular}{| L{1cm} | C {6cm} | C {2cm} | C{2cm} |  R{3cm}}
+\hline
+Class & Educational Institution & Year of Passing & Percentage Secured \\
+\hline
+10th & Ryan International School,Vasant Kunj & 2011 & 8.0 CGPA\\
+\hline
+12th &  Ryan International School,Vasant Kunj & 2013 & 87\% \\
+\hline
+\end{tabular} 
+\end{center}
+\end{flushleft}
+
 \end{document}
